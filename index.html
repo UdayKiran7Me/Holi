@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parralax Scrolling Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Festival</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </header>
+    <section id="scene">
+        <img src="splash.png" id="splash">
+        <img src="text.png" id="text">
+        <img src="baloon1.png" id="baloon1">
+        <img src="baloon2.png" id="baloon2">
+        <img src="baloon3.png" id="baloon3">
+        <img src="decoration1.png" id="decoration1">
+        <img src="decoration2.png" id="decoration2">
+        <img src="color1.png" id="color1">
+        <img src="color2.png" id="color2">
+        <img src="watergun1.png" id="watergun1">
+        <img src="watergun2.png" id="watergun2">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab aperiam id cum repellat minima praesentium sed, aliquam perferendis consequuntur fugiat nesciunt possimus enim vel tenetur? Doloremque saepe consectetur ut ex quibusdam vel adipisci neque est. Harum fuga consequuntur temporibus tenetur. Veritatis, reiciendis provident velit maxime beatae suscipit? Est ipsa corrupti ut nemo nihil, ratione dicta vel cupiditate illo vitae tempora porro, alias consequatur ducimus molestias. Aliquid voluptas dicta perspiciatis adipisci ipsum atque, et, ut architecto illo fuga obcaecati sunt doloribus! Iusto architecto, rerum maxime vitae officia tenetur labore in totam modi animi provident iste commodi reiciendis quod culpa voluptate inventore.<br><br> Officia, ad, aliquid impedit itaque doloremque, asperiores sequi eaque vero soluta eum repudiandae voluptatibus veritatis error quas atque sapiente molestiae doloribus aut perferendis labore dolorum. Sit similique culpa, quam tenetur blanditiis rem, aspernatur vitae esse molestias eos rerum aliquam? Laboriosam esse quisquam autem soluta magnam molestiae laborum a recusandae nulla magni nostrum quis non ipsa voluptatum reprehenderit, similique asperiores assumenda.<br><br> Dignissimos ea perferendis qui autem repellat. Ullam ex laudantium porro maxime quaerat harum ipsam qui voluptate nulla obcaecati sequi minima fuga iure sapiente, possimus, iusto eum autem corporis inventore quam ab, eos tempore. Fugiat laudantium beatae porro voluptate eaque quia veritatis harum unde nisi. Delectus inventore, corrupti quae consectetur voluptas ut, vitae commodi nostrum, aspernatur perferendis dolorem fugiat? Porro animi temporibus expedita iusto voluptatum magnam reprehenderit voluptatibus dolorum odit hic, nisi autem vel accusantium debitis odio et quis! Sint sunt ducimus expedita itaque quisquam facere aliquam iusto quod magnam adipisci. Esse earum ipsa necessitatibus nulla. Esse molestias quisquam minus magnam consequuntur, animi nisi illum placeat sint porro odit sapiente eius facilis excepturi maxime velit adipisci hic quam error vel minima.<br><br> Ea sapiente beatae atque ipsam quibusdam eos optio quasi placeat minus earum maxime nobis labore vero, possimus magnam maiores sint temporibus exercitationem, porro commodi! Dolores nemo est reiciendis beatae dolore iste consequatur sunt dicta fugit laboriosam. Natus eum iure a beatae, officiis necessitatibus inventore minus. Consequatur voluptatibus, iure nobis magni numquam possimus aspernatur aut. Quas veniam animi eaque ut aspernatur vel enim quod pariatur cupiditate, a ad quis maiores minus.</p>
+    </div>
+    <script>
+        let splash = document.getElementById('splash');
+        let text = document.getElementById('text');
+        let baloon1 = document.getElementById('baloon1');
+        let baloon2 = document.getElementById('baloon2');
+        let baloon3 = document.getElementById('baloon3');
+        let decoration1 = document.getElementById('decoration1');
+        let decoration2 = document.getElementById('decoration2');
+        let color1 = document.getElementById('color1');
+        let color2 = document.getElementById('color2');
+        let watergun1 = document.getElementById('watergun1');
+        let watergun2 = document.getElementById('watergun2');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            splash.style.top = value * 0.75 + 'px';
+            text.style.top = value * 0.25 + 'px';
+            decoration1.style.top = value * 0.5 + 'px';
+            baloon1.style.top = value * -3.25 + 'px';
+            baloon2.style.top = value * -0.5 + 'px';
+            baloon3.style.top = value * -2 + 'px';
+            color1.style.top = value * -0.25 + 'px';
+            color2.style.top = value * -0.75 + 'px';
+            watergun1.style.left = value * -0.75 + 'px';
+            watergun2.style.left = value * 0.75 + 'px';
+        })
+    </script>
+</body>
+</html>
